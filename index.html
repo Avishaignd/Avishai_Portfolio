@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avishai's home page</title>
+    <link rel="icon" href="images/heart.png" type="image/heart-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navigation">
+        <ol>
+            <li style="flex-grow: 1;"><a href="index.html">Home</a></li>
+            <li style="flex-grow: 1;"><a href="about.html" target="_blank">About</a></li>
+            <li style="flex-grow: 1;"><a href="contact.html" target="_blank">Contact</a></li>
+        </ol>
+    </nav>
+    <div class="main-content">
+        <!-- used  inline styling because I couldn't make the box shadow transformation work any other way -->
+        <div id="card" style="box-shadow: 11px 15px 5px 0px rgba(0,0,0,0.75);">
+            <h1 id="header"></h1>
+            <img src="" id="headerImage" alt="MyPhoto">
+            <ul>
+                <li> <a href="https://github.com/Avishaignd" target="_blank">
+                        <img src="images/github.png" alt="Github" height="30"
+                            width="30">
+                    </a> </li>
+                <li>
+                    <a href="https://stackoverflow.com/users/14156748/avishaignd" target="_blank">
+                        <img src="images/stack-overflow.png"
+                            alt="Stack Overflow" height="30" width="30">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/avishai-gandelman-2aa3201b3/" target="_blank">
+                        <img src="images/linkedin.png" alt="Linkedin"
+                            height="30" width="30">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>
+        <p id="madeBy"></p>
+        <br>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel
+            perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </p>
+        <p id="links"></p>
+    </div>
+    <script src="index.js"></script>
+    <script src="footer.js"></script>
+</body>
+</html>

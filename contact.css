@@ -1,0 +1,125 @@
+body{
+    /* used to remove the body's margin on the top and left side so that the navbar would stick to the position needed */
+    margin-top: 0%;
+    margin-left: 0%;
+    background-image: url("images/BackGround.jpg");
+    /* used so the background image would appear once and centered */
+    background-position: center;
+    background-size: 125%
+}
+
+
+button{
+    background: radial-gradient(circle, rgba(177,86,152,0.9780287114845938) 34%, rgba(255,255,255,1) 100%);
+    height: 2rem;
+    width: 4rem;
+    transition: border-radius 2s;
+    align-self: center;
+}
+
+button:hover{
+    transition: 2s;
+    border-radius: 2rem;
+}
+
+nav{
+    /* used flex to have more control on the links location and arrangement */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* used to make the nav bar stay in place even when scrolling */
+    position: fixed;
+    background-color: rgb(52, 86, 238);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Domine', serif;
+}
+
+nav ol{
+    /* used in order to spread the links evenly in the navbar */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* used to make the navbar stay in place */
+    position: fixed;
+    background-color: rgb(52, 86, 238);
+    border: 0.25rem black solid;
+    margin: 0;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ol li a{
+    /* used to rmove the underline from the links */
+    text-decoration: none;
+    /* used to make the entire background of the link change color */
+    display: block;
+    height: 100%;
+    padding: 0;
+    color: violet;
+    font-size: xx-large;
+}
+
+nav a:hover{
+    background-color: rgb(175, 146, 245);
+    color: rgb(0, 0, 0);
+}
+
+a:visited{
+    color: black;
+}
+
+
+ol li{
+    /* used to remove the bullets */
+    list-style-type: none;
+    /* used to display the list items in one line */
+    display: inline-block;
+}
+
+section{
+    /* used padding to adjust the location of the entire card */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    border: black 5px double; /*0.3125rem*/
+    width: 33%;
+    box-shadow: 11px 15px 5px 0px rgba(0,0,0,0.75);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    margin: auto;
+}
+form{
+    text-align: center;
+    /* used in order to give the card a more organized and fuller look, and to better control the items location */
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+}
+
+form input{
+    /* used to locate the input better */
+    margin: left 2rem right 2rem top 0.5rem
+}
+
+h1{
+    margin-top: 0rem;
+    padding-top: 4rem;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Domine', serif;
+}
+
+#madeBy{
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    text-align: center;
+}
+
+#links{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}

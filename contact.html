@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Avishai</title>
+    <link rel="icon" href="images/heart.png" type="image/heart-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <ol>
+            <li style="flex-grow: 1;"><a href="index.html" target="_blank">Home</a></li>
+            <li style="flex-grow: 1;"><a href="about.html" target="_blank">About</a></li>
+            <li style="flex-grow: 1;"><a href="contact.html">Contact</a></li>
+        </ol>
+    </nav>
+    <h1>Contact me</h1>
+    <section>
+        <form id="form">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="What is your first name?" class="formInputs userValue" required><br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="What is your last name?" class="formInputs userValue" required><br><br>
+            <label class="email" for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="What is your E-mail address?" class="formInputs userValue" required><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" class="formInputs birthday userValue" required><br><br>
+            <label class="comments" for="Comments">Comments:</label>
+            <textarea rows="1" cols="10" name="Comments" form="usrform" class="formInputs userValue"></textarea><br><br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+     </section>
+     <p id="madeBy"></p>
+     <p id="links"></p>
+     <script src="contact.js"></script>
+     <script src="footer.js"></script>
+</body>
+
+</html>

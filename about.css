@@ -1,0 +1,126 @@
+body {
+    text-align: left;
+    margin-top: 0%;
+    margin-left: 0%;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("images/BackGround.jpg");
+    background-position: center;
+    background-size: 125%
+}
+
+
+nav {
+    /*flex chosen to make the arranging of the items easier*/
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /*used to keep the navbar from moving*/
+    position: fixed;
+    text-align: center;
+    font-family: 'Domine', serif;
+}
+
+nav ol {
+    /* used in order to spread the links evenly in the navbar and better control them */
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(52, 86, 238);
+    border: 4px black solid;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav ol li a {
+    text-decoration: none;
+    /* makes the entire background of the link clickable */
+    display: block;
+    height: 100%;
+    padding: 0;
+    font-size: xx-large;
+    color: violet;
+}
+
+nav a:hover {
+    background-color: rgb(175, 146, 245);
+    color: rgb(0, 0, 0);
+}
+
+a:visited {
+    color: black    ;
+}
+
+
+ol li {
+    /*used style type none to remove bullets*/
+    list-style-type: none;
+    /*used display inine block to remove the line breaker so the items would be next to each other*/
+    display: inline-block;
+    /*streched in oreder to make the entire block clickable*/
+    align-self: stretch;
+}
+
+h2 {
+    margin-top: 0%;
+    padding-left: 1rem;
+    color: darkblue;
+    padding-top: 0.8rem;
+}
+
+h3 {
+    color: darkred;
+    padding-left: 1rem;
+    font-size: x-large;
+}
+
+h4 {
+    padding-left: 1rem;
+    font-size: x-large;
+    color: darkmagenta;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1rem;
+    font-weight: 800;
+}
+
+p {
+    padding-left: 1rem;
+    font-weight: 800;
+}
+
+iframe {
+    width: 275px;
+    height: 275px;
+    border: black solid 4px;
+    float: right;
+    /* the map was created in a very low spot so i had to raise it somehow, this was the best way i could think of */
+    margin-top: -7.5rem;
+    margin-right: 10rem;
+    transition: height 2s, width 2s;
+}
+
+
+iframe:hover {
+    transition: 2s;
+    width: 350px;
+    height: 350px;
+}
+
+button{
+    /* used to keep the buttons close to the map */
+    float: right;
+    margin-right: 1rem;
+}
+
+#madeBy{
+    margin-top: 16rem;
+    font-size: small;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#links{
+    text-align: center;
+}

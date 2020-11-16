@@ -1,0 +1,120 @@
+body{
+    
+    text-align: center;
+    padding: top 10rem;
+    margin: 0;
+    margin-left: 0%;
+    background-image: url("images/BackGround.jpg");
+    background-position: center;
+    background-size: 125%
+}
+
+#card{
+    /* used to locate the card */
+    margin: top 5rem;
+    /* used to keep the card in the middle of the screen */
+    display: inline-block;
+    border: 5px black double;
+    width: 25%;
+    font-family: 'Domine', serif;
+    transition: 2s;
+}
+
+
+#card:hover{
+    transition: 2s;
+    border-radius: 2rem;
+    /* used to make the border transformation with the inline styling, couldn't find a better way to do it */
+    box-shadow: 11px 15px 5px 0px  rgba(179,6,179,1) !important;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Domine', serif;
+}
+
+ol{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(52, 86, 238);
+    border: 4px black solid;
+    margin: 0;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ol li a{
+    text-decoration: none;
+    /* used display block to make the entire link background also clickable */
+    display: block;
+    height: 100%;
+    padding: 0;
+    font-size: xx-large;
+    color: violet;
+}
+
+nav a:hover{
+    background-color: rgb(175, 146, 245);
+    color: black;
+}
+
+
+ol li{  
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+ul li{
+    /* used to put the links organized in one row */
+    display: inline-block;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+li{
+    list-style-type: none;
+    display: block;
+}
+
+
+div.main-content{
+    /* used to make sure the navbar sticks to the top and not pushed down by the main content upper margin */
+    margin-top: 0;
+    padding-top: 6rem;
+}
+
+#headerImage{
+    border-radius: 50%;
+    height: 14rem;
+    width: 14rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 1rem;
+}
+
+a:visited{
+    color: black;
+}
+
+p a:hover{
+   color: white;
+}
+
+#madeBy{
+    font-family: 'Roboto', sans-serif;
+}
